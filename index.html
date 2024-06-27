@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <title>Dashboard de Streaming Wars</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h3>PLATAFORMAS STREAMING</h3>
+                            </div>
+                            <div class="intro-link">
+                <a href="#" onclick="showIntro()">INTRODUCCIÓN</a>
+            </div>
+            <ul class="platform-list">
+                <li><a href="#" onclick="loadData('netflix')">NETFLIX</a></li>
+                <li><a href="#" onclick="loadData('disney')">DISNEY+</a></li>
+                <li><a href="#" onclick="loadData('amazon')">AMAZON PRIME</a></li>
+                <li><a href="#" onclick="loadData('hbo')">HBO MAX</a></li>
+                
+            </ul>
+            
+        </nav>
+        <main class="content" id="main-content">
+            <div id="introText" class="introText">
+                <h2>IMPACTO CULTURAL DE LAS PLATAFORMAS</h2>
+                <p>Las plataformas de streaming han transformado la manera en que consumimos contenido, desde películas y series hasta documentales y programas de televisión. Estas plataformas no solo han cambiado nuestros hábitos de visualización, sino que también han influido profundamente en la cultura e identidad modernas. Ofrecen acceso inmediato a una vasta biblioteca de contenido que ha permitido a las personas explorar diversas culturas, aprender nuevos idiomas y descubrir talentos de todo el mundo. Además, han democratizado la producción y distribución de contenido, brindando a creadores independientes una plataforma para compartir sus historias con una audiencia global.</p>
+                <p>La conveniencia de poder ver contenido en cualquier momento y en cualquier lugar ha redefinido la experiencia de entretenimiento, haciendo que el contenido sea más accesible y personalizado. Con la creciente competencia entre las plataformas, los usuarios tienen una variedad sin precedentes de opciones para elegir, lo que a su vez impulsa la innovación y la diversidad en la producción de contenido.</p>
+                <p>En resumen, las plataformas de streaming no solo están remodelando la industria del entretenimiento, sino que también están moldeando la cultura global al conectar a las personas a través de historias y experiencias compartidas.</p>
+                <img src="img.png"  class="introImage">
+            </div>
+            
+            <div id="productionsCount" class="infoBox" style="display: none;"></div>
+            <div id="titleCount" class="infoBox" style="display: none;"></div>
+            <div class="chartsContainer" style="display: none;">
+                <div class="chartRow">
+                    <div class="chartWrapper">
+                        <h4>   Cantidad aproximada de títulos por categoría</h4>
+                        <canvas id="doughnutChart"></canvas>
+                    </div>
+                    <div class="infoBox" id="platformAverage" style="display: none;"></div>
+                </div>
+                <div class="chartRow">
+                    <div class="chartWrapper">
+                         <h4>   Calificación de la plataforma</h4>
+                        <canvas id="barChart"></canvas>
+                    </div>
+                    <div class="infoBox" id="platformPerMonth" style="display: none;"></div>
+                </div>
+               
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
