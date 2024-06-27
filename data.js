@@ -33,7 +33,7 @@ const dummyData = {
         perMonth: 5790,
         labels: ["Acción", "Comedia", "Drama", "Ciencia", "Infantil"],
         stars: ["5 estrellas","4 estrellas","3 estrellas","2 estrellas","1 estrella"],
-        stardata: [100, 44, 33, 600, 1], 
+        stardata: [2442449, 345218, 207742, 197167,  819571], 
         stars: ["5 estrellas","4 estrellas","3 estrellas","2 estrellas","1 estrella"],
 
         datasets: [{
@@ -48,7 +48,7 @@ const dummyData = {
         perMonth: 5990,
         labels: ["Películas recientes", "Comedia", "Drama", "Ciencia Ficción", "Documental"],
         stars: ["5 estrellas","4 estrellas","3 estrellas","2 estrellas","1 estrella"],
-        stardata: [100, 44, 33, 600, 1], 
+        stardata: [1242035, 90677, 27863, 8711, 29211], 
         datasets: [{
             data: [400, 300, 600, 300, 150],
            backgroundColor: ['#F26B8A', '#F25278', '#FD5DA8', '#FC9483', '#F699CD']
